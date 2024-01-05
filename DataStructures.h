@@ -22,6 +22,7 @@ struct Subject {
 };
 
 struct Course {
+    std::string name;
     int courseID;
     std::vector<int> subjects;
 };

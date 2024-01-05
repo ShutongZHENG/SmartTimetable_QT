@@ -18,6 +18,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void addCourse(Course course);
 
 private slots:
 
@@ -28,6 +29,8 @@ private slots:
     void on_btnDelete_clicked();
 
     void on_listWidgetBasic_itemClicked(QListWidgetItem *item);
+
+    void on_listWidgetIntermediate_currentRowChanged(int currentRow);
 
 private:
     Ui::MainWindow *ui;
